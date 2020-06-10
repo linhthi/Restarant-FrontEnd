@@ -9,10 +9,11 @@ function MenuPage() {
     }, []);
     
     const [dishes, setDishes] = useState([]);
+    const getAllDishUrl = 'pub/get-all-dish';
 
     const fetchDishes = () => {
 
-        axios.get(`https://raw.githubusercontent.com/yourdpm/React-Tutorial/master/dish.json`)
+        axios.get(getAllDishUrl)
             .then(res => {
                 const dishes = res.data;
                 setDishes(dishes);
