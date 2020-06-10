@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.card {}
+
+.card {
+    height: 100%;
+}
+
+ul.list-inline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li.list-inline-item {
+    margin-bottom: 10px;
+}
+
+img.card-img-top {
+    height: 50%;
+}
